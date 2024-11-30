@@ -29,7 +29,7 @@ body {
 }
 /*========== active player ========*/
 .player {
-  background-color: rgba(255, 255, 255, 0.613);
+  background-color: #ffffff9c;
   width: 50%;
 }
 .player .name {
@@ -56,18 +56,18 @@ body {
 }
 .current-score-wrapper h3 {
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.799);
+  color: #ffffffcc;
   font-weight: 100;
   text-transform: uppercase;
   margin: 0;
 }
 .current-score {
   font-size: 2.3rem;
-  color: white;
+  color: #ffffff;
 }
 /*========= disable player ========= */
 .player-disable {
-  background-color: rgba(255, 255, 255, 0.337);
+  background-color: #ffffff56;
 }
 .player-disable .name {
   font-weight: 100;
@@ -77,16 +77,16 @@ body {
 }
 /* ========= positioned btns ======= */
 .positioned-btn {
-  background-color: rgba(255, 255, 255, 0.838);
+  background-color: #cdd0fd;
   width: max-content;
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 100;
-  color: rgba(57, 57, 57, 0.812);
+  color: #393939cf;
   padding: 0.7em 1em;
   border: none;
   border-radius: 30px;
-  box-shadow: 0 6px 0 0 rgba(245, 245, 245, 0.215);
+  box-shadow: 0 6px 0 0 #f5f5f537;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -107,4 +107,15 @@ body {
 }
 #hold {
   top: 70vh;
+}
+/* ========= winner player ========== */
+.player--winner {
+  background-color: #ffffff;
+}
+/* ========= loser player ========== */
+.player--loser {
+  background-color: #000000;
+}
+.player--loser .name {
+  color: #ffffff;
 }
