@@ -119,3 +119,15 @@ body {
 .player--loser .name {
   color: #ffffff;
 }
+/* ===== dice ======= */
+.dice {
+  width: 8em;
+  position: absolute;
+  top: 38vh;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+}
+.hidden {
+  display: none;
+}
