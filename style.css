@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  font-family: 'Nunito', sans-serif;
+}
+#container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  min-height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.name {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.6rem;
+  margin: 2em auto 0.2em;
+  letter-spacing: 2px;
+}
+/*========== active player ========*/
+.player {
+  background-color: rgba(255, 255, 255, 0.613);
+  width: 50%;
+}
+.player .name {
+  color: rgb(57, 57, 57);
+  font-weight: 700;
+}
+.score {
+  color: #c7375f;
+  text-align: center;
+  font-weight: 300;
+  font-size: 5rem;
+  margin: 0 auto 1.6em;
+}
+.current-score-wrapper {
+  width: 13em;
+  padding: 1.3em 0;
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color: #c7375f;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.current-score-wrapper h3 {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.799);
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 0;
+}
+.current-score {
+  font-size: 2.3rem;
+  color: white;
+}
+/*========= disable player ========= */
+.player-disable {
+  background-color: rgba(255, 255, 255, 0.337);
+}
+.player-disable .name {
+  font-weight: 100;
+}
+.player-disable .current-score-wrapper {
+  opacity: 0.8;
+}
+/* ========= positioned btns ======= */
+.positioned-btn {
+  background-color: rgba(255, 255, 255, 0.838);
+  width: max-content;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: rgba(57, 57, 57, 0.812);
+  padding: 0.7em 1em;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 6px 0 0 rgba(245, 245, 245, 0.215);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 100ms ease-in-out;
+}
+.positioned-btn:hover {
+  opacity: 0.8;
+}
+.positioned-btn:active {
+  transform: translate(-50%, 6px);
+  box-shadow: none;
+}
+#new-game {
+  top: 20vh;
+}
+#roll-dice {
+  top: 60vh;
+}
+#hold {
+  top: 70vh;
+}

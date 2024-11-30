@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Pig Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<script src="script.js"></script>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="player">
+        <h2 class="name">Player 1</h2>
+        <h2 class="score">0</h2>
+        <div class="current-score-wrapper">
+          <h3>current</h3>
+          <span class="current-score">0</span>
+        </div>
+      </div>
+      <div class="player player-disable">
+        <h2 class="name">Player 2</h2>
+        <h2 class="score">0</h2>
+        <div class="current-score-wrapper">
+          <h3>current</h3>
+          <span class="current-score">0</span>
+        </div>
+      </div>
+    </div>
+    <button id="new-game" class="positioned-btn">🔄️ New Game</button>
+    <button id="roll-dice" class="positioned-btn">🎲 roll dice</button>
+    <button id="hold" class="positioned-btn">📥 hold</button>
+    <script src="script.js"></script>
+  </body>
 </html>
