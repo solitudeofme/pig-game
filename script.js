@@ -35,11 +35,11 @@ let disablingBtns = () => {
 
 let whoIsWinner = () => {
   console.log(score1.textContent);
-  if (Number(score1.textContent) >= 10) {
+  if (Number(score1.textContent) >= 100) {
     player1.classList.add('player--winner');
     player2.classList.add('player--loser');
     disablingBtns();
-  } else if (Number(score2.textContent) >= 10) {
+  } else if (Number(score2.textContent) >= 100) {
     player2.classList.add('player--winner');
     player1.classList.add('player--loser');
     disablingBtns();
