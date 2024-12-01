@@ -34,14 +34,34 @@ let player2 = document.querySelector('.player-2');
 
 //========== Events =========
 let diceNum = 0;
-let sum;
 rollDiceBtn.addEventListener('click', () => {
   diceNum = Math.trunc(Math.random() * 6) + 1;
   dice.classList.remove('hidden');
   dice.src = `images/dice-${diceNum}.png`;
+  if (diceNum === 1) {
+    if (c % 2 === 1) {
+      currentScore1.textContent = '0';
+    } else {
+      currentScore2.textContent = '0';
+    }
+    switchPlayer();
+  } else {
+    if (c % 2 === 1) {
+      currentScore1.textContent = Number(currentScore1.textContent) + diceNum;
+    } else {
+      currentScore2.textContent = Number(currentScore2.textContent) + diceNum;
+    }
+  }
 });
 
 holdBtn.addEventListener('click', () => {
+  if (c % 2 === 1) {
+    score1.textContent = currentScore1.textContent;
+    currentScore1.textContent = '0';
+  } else {
+    score2.textContent = currentScore2.textContent;
+    currentScore2.textContent = '0';
+  }
   switchPlayer();
 });
 newGameBtn.addEventListener('click', () => {
