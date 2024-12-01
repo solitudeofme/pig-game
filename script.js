@@ -35,11 +35,11 @@ let disablingBtns = () => {
 
 let whoIsWinner = () => {
   console.log(score1.textContent);
-  if (Number(score1.textContent) >= 10) {
+  if (Number(score1.textContent) >= 100) {
     player1.classList.add('player--winner');
     player2.classList.add('player--loser');
     disablingBtns();
-  } else if (Number(score2.textContent) >= 10) {
+  } else if (Number(score2.textContent) >= 100) {
     player2.classList.add('player--winner');
     player1.classList.add('player--loser');
     disablingBtns();
@@ -89,4 +89,8 @@ newGameBtn.addEventListener('click', () => {
   score1.textContent = '0';
   score2.textContent = '0';
   dice.classList.add('hidden');
+  player1.classList.remove('player--winner');
+  player1.classList.remove('player--loser');
+  player2.classList.remove('player--winner');
+  player2.classList.remove('player--loser');
 });
