@@ -121,12 +121,13 @@ body {
 }
 /* ===== dice ======= */
 .dice {
-  width: 8em;
+  width: 7em;
   position: absolute;
-  top: 38vh;
+  top: 35vh;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 15px;
+  box-shadow: 0 0 20px 10px rgba(75, 69, 69, 0.351);
 }
 .hidden {
   display: none;
