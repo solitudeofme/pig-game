@@ -84,10 +84,14 @@ holdBtn.addEventListener('click', () => {
 });
 
 newGameBtn.addEventListener('click', () => {
+  c = 0;
+  switchPlayer();
   currentScore1.textContent = '0';
   currentScore2.textContent = '0';
   score1.textContent = '0';
   score2.textContent = '0';
+  rollDiceBtn.disabled = false;
+  holdBtn.disabled = false;
   dice.classList.add('hidden');
   player1.classList.remove('player--winner');
   player1.classList.remove('player--loser');
