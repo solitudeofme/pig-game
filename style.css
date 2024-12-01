@@ -93,7 +93,7 @@ body {
   transition: all 100ms ease-in-out;
 }
 .positioned-btn:hover {
-  opacity: 0.8;
+  background-color: #9fa4e9;
 }
 .positioned-btn:active {
   transform: translate(-50%, 5px);
