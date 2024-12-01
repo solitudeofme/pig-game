@@ -65,7 +65,7 @@ body {
   font-size: 2.3rem;
   color: #ffffff;
 }
-/*========= disable player ========= */
+/* ========= disable player ========= */
 .player-disable {
   background-color: #ffffff56;
 }
@@ -86,7 +86,7 @@ body {
   padding: 0.7em 1em;
   border: none;
   border-radius: 30px;
-  box-shadow: 0 6px 0 0 #f5f5f537;
+  box-shadow: 0 5px 0 0 #cdd0fd63;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -96,7 +96,7 @@ body {
   opacity: 0.8;
 }
 .positioned-btn:active {
-  transform: translate(-50%, 6px);
+  transform: translate(-50%, 5px);
   box-shadow: none;
 }
 #new-game {
